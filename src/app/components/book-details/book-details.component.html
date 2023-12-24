@@ -1,0 +1,16 @@
+<div>
+    <div *ngFor="let book of books$ | async">
+        <h2>{{book.title}}</h2>
+        <h2>{{book.author}}</h2>
+    </div>
+</div>
+
+<form>
+    <input type="text" placeholder="Add Book Id" />
+    <br>
+    <input type="text" placeholder="Add Book Title" />
+    <br>
+    <input type="text" placeholder="Add Book Author" />
+    <br>
+    <button type="button">Add Book</button>
+</form>
